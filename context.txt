@@ -1,0 +1,77 @@
+# Portfolio Website Design - Single Page React Web App
+
+## Sections
+
+### 1. Home / Landing Page
+
+- 🎯 Clean, engaging intro
+- 🦸 Hero section with name, role (e.g., Full Stack Developer / AI Enthusiast)
+- 🌌 Animated Nebula Background: Swirling stars and constellations subtly animated
+- 💬 Floating Text Bubbles: Your name and tagline fade in like holograms
+- 🚀 Scroll-triggered Rocket: A mini rocket guides the user to the next section as they scroll
+- 📱 AR Button: A “Scan Me” button for viewing your 3D avatar in their room via WebAR
+
+### 2. About
+
+- 🎯 **Career Objective**: A brief paragraph about your aspirations and goals
+- 🧊 3D Cube of Skills: Each face rotates to show tech stacks. Click to expand.
+- 🛠️ **Tech Stacks**:
+  - 🌐 Web Development: HTML, CSS, JavaScript, React, Node.js, etc.
+  - 🤖 AI/ML: Python, TensorFlow, Scikit-learn, etc.
+  - ☁️ DevOps/Cloud: Docker, GitHub Actions, AWS, GCP, etc.
+- 📜 **Certificates**: Floating digital certificates that zoom in on hover
+- 🔌 University Course Circuit Board: Courses displayed like a digital circuit diagram
+
+### 3. Work and Leadership Experience
+
+- 📅 VR Timeline: Horizontally scrollable 3D timeline with interactive points
+- 🎮 Retro Game Mode: Each experience is a “level” with a mini-game aesthetic
+- 🧠 Leadership Cards Flip: Hover flip cards showing animations or images behind
+
+### 4. Projects
+
+- 🗂️ Floating Hologram Cards: Projects rotate in 3D space, expanding like sci-fi dossiers
+- 🔢 Display first 6 projects initially
+- ➕ "Load More" button reveals additional projects (pagination)
+- 🎤 Voice Filter: Filter projects by voice command (e.g., "Show me ML projects")
+- 🧬 Matrix Reveal: Projects load with matrix-style decryption animation
+- 📄 Each card: title, description, tech stack used, GitHub link
+
+### 5. Services
+
+- 🌟 Skill Constellation: Services shown as stars in a connected constellation map
+- 📜 Magic Scroll: An animated scroll unrolls listing your offerings
+- 📇 AR Business Card: Scannable QR code for downloading résumé or connecting
+- 🧰 List of offerings with icons:
+  - 🎨 Frontend Development
+  - 🛠️ Backend Development
+  - 🧠 Machine Learning
+  - 🏗️ Data Engineering
+  - 📊 Data Analytics
+  - 🤝 Soft Skills (e.g., communication, team collaboration)
+
+### 6. Contact
+
+- 📝 Sci-Fi Console UI: Form styled like a mission log console
+- 💡 Holographic Form Fields: Neon glowing input fields with sound effects
+- 📩 Live Avatar Response: 3D avatar acknowledges submission (e.g., “Thanks! Aum will get back to you soon.”)
+- 📇 Your Contact Info: email, phone, LinkedIn, GitHub, etc.
+
+### 7. 3D Avatar Assistant
+
+- 🧍‍♂️ Interactive 3D avatar (e.g., using Three.js + React Three Fiber)
+- 🔌 Connected to an LLM backend via API
+- 🧠 Implements RAG (Retrieval-Augmented Generation)
+  - 📚 Fed with structured data on your bio, projects, work, skills
+  - ❓ Responds to questions like: "What projects has Aum worked on in AI?" or "What's Aum's experience with React?"
+- 💬 Holodesk Chat: Floating transparent chat panel
+- 😊 Emotion-Responsive Avatar: Facial expressions adapt to queries
+- 🔊 Voice Interaction: Whisper-quiet voice responses using Web Speech API
+- 🧊 "Ask Me Anything" Cube: Clickable cube with topics triggering avatar explanations
+
+### 🎨 Bonus Flair
+
+- 🌗 Day/Night Toggle: Switch between a clean space station and neon hacker den
+- 🖱️ Cursor Trail: Light particles or mini circuit lines follow the mouse
+- 📊 Live Stats HUD: Live GitHub contributions, current Spotify track, or blog feed
+
