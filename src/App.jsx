@@ -14,6 +14,7 @@ const fullConfig = {
   cometFrequence: 100,
   sunScale: 2,
   planetsScale: 1,
+  solarSystemOrbite: 6,
   solarSystemSpeedOrbit: 40
 };
 
@@ -41,13 +42,15 @@ function App() {
 
   return (
     <div className="relative">
+       
       {/* Persistent Nebula */}
-      <NebulaBackground config={nebulaConfig} />
 
-      {/* Content Sections */}
+      <NebulaBackground config={nebulaConfig} />
       <div ref={homeRef}>
         <HomeSection />
       </div>
+      {/* Content Sections */}
+     
       <AboutSection />
       {/* ...other sections */}
     </div>

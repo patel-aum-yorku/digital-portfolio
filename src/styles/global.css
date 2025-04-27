@@ -9,3 +9,74 @@
       opacity: 1;
     }
   }
+
+  @keyframes orbit {
+    to { offset-distance: 100%; }
+  }
+  
+  .rocket {
+    /* define a circle of radius R around the center of the hero area */
+    offset-path: circle(150px at 50% 50%);
+    offset-distance: 0%;
+    offset-rotate: 0deg;          /* keep rocket upright */
+    animation: orbit 4s linear forwards;
+  }
+
+/* ——— your custom utilities ——— */
+@layer utilities {
+  .text-glow {
+    text-shadow:
+      0 0 2px rgba(255,255,255,0.8),
+      0 0 8px rgba(182,155,46,0.88),
+      0 0 16px rgba(255,224,102,0.4);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r
+      from-purple-400 via-pink-500 to-yellow-300;
+    background-size: 200% 100%;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .flicker {
+    animation: flicker 3s infinite;
+  }
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      opacity: 1;
+      text-shadow: 0 0 8px rgba(255,224,102,0.8);
+    }
+    20%, 24%, 55% {
+      opacity: 0.8;
+      text-shadow: none;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Add this to your global CSS for fade-in animation */
+@keyframes fadeIn {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+
+.fade-in {
+animation: fadeIn 2s ease-in-out;
+}
+/* In your main CSS file (e.g., index.css or App.css) */
+.content {
+position: relative; /* Or absolute, depending on your layout */
+z-index: 0; /* Or a higher value */
+}
