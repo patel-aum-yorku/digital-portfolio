@@ -8,14 +8,15 @@ import AboutSection from "./sections/AboutSection.jsx";
 
 // Nebula configurations
 const fullConfig = {
-  starsCount: 400,
+  starsCount: 1000,
   starsRotationSpeed: 3,
   nebulasIntensity: 10,
   cometFrequence: 100,
-  sunScale: 2,
-  planetsScale: 1,
-  solarSystemOrbite: 6,
-  solarSystemSpeedOrbit: 40
+  sunScale: 3,
+  planetsScale: 2.9,
+  solarSystemOrbite: 90,
+  solarSystemSpeedOrbit: 100,
+  
 };
 
 const minimalConfig = {

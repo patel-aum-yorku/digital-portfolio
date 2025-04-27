@@ -80,3 +80,15 @@ animation: fadeIn 2s ease-in-out;
 position: relative; /* Or absolute, depending on your layout */
 z-index: 0; /* Or a higher value */
 }
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/10 backdrop-blur-lg rounded-xl border border-white/20;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+}
