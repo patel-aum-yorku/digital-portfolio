@@ -109,5 +109,25 @@ z-index: 0; /* Or a higher value */
   .preserve-3d { transform-style: preserve-3d; }
   .rotate-y-180 { transform: rotateY(180deg); }
   .backface-hidden { backface-visibility: hidden; }
+
+  @keyframes badge-reveal {
+    from {
+      clip-path: circle(0% at var(--cx) var(--cy));
+    }
+    to {
+      clip-path: circle(150% at var(--cx) var(--cy));
+    }
+  }
+  
+  /* utility class you’ll add to each badge */
+  .reveal-badge {
+    /* start fully clipped */
+    clip-path: circle(0% at var(--cx) var(--cy));
+    /* animate the circle expansion */
+    animation: badge-reveal 0.6s ease-out forwards;
+    /* stagger by index */
+    animation-delay: calc(var(--i) * 0.1s);
+  }
+  
 }
 

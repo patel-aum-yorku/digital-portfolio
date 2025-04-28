@@ -62,40 +62,42 @@ export default function CategoryCard({ emoji, title, items }) {
         </div>
 
         {/* Back face with depth-of-field blur */}
-        <div
-          style={{ ...faceStyle, transform: 'rotateY(180deg)' }}
-          className="bg-black/50 backdrop-blur-md border border-white/20 rounded-lg overflow-hidden"
-        >
-          <div className="relative w-full h-full">
-            {items.map((item, i) => {
-              const Icon = techIconMap[item] || (() => <span>{item}</span>);
-              // Compute depth blur: nearer badges have z ~30, far ones ~30 + N*20
-              const z = 30 + i * 20;
-              const blur = Math.min(z / 50, 2); // cap blur at 2px
-              return (
-                <motion.div
-                  key={item}
-                  style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: `translate(-50%, -50%) translateZ(${z}px)`,
-                    WebkitTransform: `translate(-50%, -50%) translateZ(${z}px)`,
-                    filter: `blur(${blur}px)`,
-                    WebkitFilter: `blur(${blur}px)`,
-                  }}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={flipped ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
-                  transition={{ delay: i * 0.1, type: 'spring', stiffness: 200, damping: 20 }}
-                  className="flex items-center space-x-2 bg-white/20 text-white px-3 py-1 rounded-full shadow-lg"
-                >
-                  <Icon className="w-4 h-4" />
-                  <span className="text-xs font-medium">{item}</span>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
+        {/* Back face */}
+<div
+  style={{ ...faceStyle, transform: 'rotateY(180deg)' }}
+  className="card-back bg-black/50 backdrop-blur-md border border-white/20 rounded-lg overflow-hidden relative"
+>
+  {items.map((item, i) => {
+    const Icon = techIconMap[item] || (() => <span className="text-xs">{item}</span>);
+
+    // Calculate badge position in % (you can tweak these math formulas)
+    const cols = 3;
+    const col = i % cols;
+    const row = Math.floor(i / cols);
+    const cx = 20 + col * 30;   // 3 columns at 20%,50%,80%
+    const cy = 20 + row * 40;   // rows at 20%,60%
+
+    return (
+      <div
+        key={item}
+        className="reveal-badge flex items-center space-x-1 bg-white/20 text-white px-2 py-1 rounded-full shadow absolute"
+        style={{
+          '--i': i,
+          '--cx': `${cx}%`,
+          '--cy': `${cy}%`,
+          /* position the badge at its (cx,cy) point */
+          left: `${cx}%`,
+          top: `${cy}%`,
+          transform: 'translate(-50%, -50%)',
+        }}
+      >
+        <Icon className="w-4 h-4" />
+        <span className="text-xs">{item}</span>
+      </div>
+    );
+  })}
+</div>
+
       </div>
     </motion.div>
   );
