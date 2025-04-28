@@ -92,3 +92,22 @@ z-index: 0; /* Or a higher value */
     scrollbar-width: none;     /* Firefox */
   }
 }
+
+@layer utilities {
+  /* animated gradient background */
+  .animate-gradient {
+    background-size: 300% 300%;
+    animation: gradientBG 8s ease infinite;
+  }
+  @keyframes gradientBG {
+    0%, 100% { background-position: 0% 50%; }
+    50%      { background-position: 100% 50%; }
+  }
+
+  /* 3D flip helpers */
+  .perspective  { perspective: 1000px; }
+  .preserve-3d { transform-style: preserve-3d; }
+  .rotate-y-180 { transform: rotateY(180deg); }
+  .backface-hidden { backface-visibility: hidden; }
+}
+

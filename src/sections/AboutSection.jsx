@@ -3,7 +3,7 @@ import AboutMe from '../components/AboutMe';
 import imageSrc2 from '../assets/myimg2.jpg';
 import SectionHeading from '../components/SectionHeading.jsx';
 import CoursesCarousel from '../components/CoursesCarousel.jsx';
-
+import TechStackSection from './TechStackSection.jsx';
 
 const AboutSection = () => {
 
@@ -38,10 +38,7 @@ const AboutSection = () => {
   Courses I Took!
 </SectionHeading>
 <CoursesCarousel />
-<SectionHeading className="mt-16 mb-8 text-glow" id="tech-stack">
-  My Tech Stack
-</SectionHeading>
-
+<TechStackSection />
 <SectionHeading className="mt-16 mb-8 text-glow" id="certificates">
   Certificates
 </SectionHeading>
