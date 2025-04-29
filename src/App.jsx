@@ -10,7 +10,7 @@ import AboutSection from "./sections/AboutSection.jsx";
 const fullConfig = {
   starsCount: 1000,
   starsRotationSpeed: 3,
-  nebulasIntensity: 10,
+  nebulasIntensity: 7,
   cometFrequence: 100,
   sunScale: 3,
   planetsScale: 2.9,

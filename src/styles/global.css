@@ -49,10 +49,10 @@ html {
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
   /* — Glassmorphism panel — */
-  .glass-panel {
-    @apply bg-white/10 backdrop-blur-lg rounded-xl border border-white/20;
-  }
-
+/* glass-panel */
+.glass-panel {
+  @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg;
+}
   /* — Text effects — */
   .text-glow {
     text-shadow:
@@ -110,20 +110,18 @@ html {
   transform: rotateY(180deg);
 }
 .front, .back {
-  @apply absolute inset-0;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  @apply absolute inset-0 backface-hidden;
 }
 .back {
   transform: rotateY(180deg);
 }
 
+/* badge glow */
 .badge-glow {
-  @apply bg-white/20 text-white px-3 py-1 rounded-full shadow-lg filter drop-shadow-lg;
-  transition: transform 0.2s, filter 0.2s;
+  @apply filter drop-shadow-[0_0_8px_rgba(255,224,102,0.7)];
 }
 .badge-glow:hover {
-  @apply scale-110 shadow-xl drop-shadow-2xl;
+  @apply drop-shadow-[0_0_12px_rgba(255,224,102,0.9)];
 }
 /* Glow + hover for badges */
 .badge-glow {

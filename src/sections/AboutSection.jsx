@@ -38,11 +38,10 @@ const AboutSection = () => {
   Courses I Took!
 </SectionHeading>
 <CoursesCarousel />
+<SectionHeading className="mt-16 mb-8 text-glow" id="tech-stack">
+        My Tech Stack
+  </SectionHeading>
 <TechStackSection />
-<SectionHeading className="mt-16 mb-8 text-glow" id="certificates">
-  Certificates
-</SectionHeading>
-
     </section>
   );
 }
