@@ -140,6 +140,42 @@ html {
 .animate-bounce-slow {
   animation: bounce-slow 2s ease-in-out infinite;
 }
+.clip-hexagon {
+  clip-path: polygon(
+    25% 0%, 75% 0%,
+    100% 50%,
+    75% 100%, 25% 100%,
+    0% 50%
+  );
+}
+.hex-border {
+  position: relative;
+  /* ensure the border sits behind your content */
+  z-index: 0;
+}
+
+/* before‑element becomes the amber outline */
+.hex-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* same points as your clip-hexagon */
+  clip-path: polygon(
+    25% 0%, 75% 0%,
+    100% 50%,
+    75% 100%, 25% 100%,
+    0% 50%
+  );
+  -webkit-clip-path: polygon(
+    25% 0%, 75% 0%,
+    100% 50%,
+    75% 100%, 25% 100%,
+    0% 50%
+  );
+  border: 2px solid #FFB400;
+  /* sits behind the main element’s background */
+  z-index: 1;
+}
 
 }
 
