@@ -33,8 +33,8 @@ export default function ProjectsPage() {
     <div className="relative w-full min-h-screen">
       <NebulaBackground />
       {/* Header & Controls */}
-      <section className="pt-32 px-4 text-center">
-      <SectionHeading className="text-glow mb-12" id="about-me">
+      <section className="pt-32 py-16 px-4 text-center" id ="projects">
+      <SectionHeading className="text-glow mb-12" id="projects">
         My Projects !
       </SectionHeading>
         <h2 className="
@@ -56,7 +56,7 @@ export default function ProjectsPage() {
   />
             <input
               type="text"
-              placeholder="Search projects..."
+              placeholder="Search projects, skills, tools..."
               value={search}
               onChange={e => setSearch(e.target.value)}
               className="pl-10 pr-4 py-2 w-full rounded-full bg-white/10 backdrop-blur-lg text-white placeholder-gray-400 outline-yellow-500 focus:outline-2"

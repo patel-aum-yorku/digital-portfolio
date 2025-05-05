@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from "./Pages/LandingPage.jsx";
 import ProjectsPage from "./Pages/ProjectsPage.jsx";
 import NebulaBackground from "./components/NebulaBackground";
-
+import WorkPage from './Pages/WorkPage.jsx';
 import Navbar from "./components/Navbar.jsx"; 
 //
 
@@ -23,8 +23,8 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
-        {/*<Route path="/work" element={<WorkPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/work" element={<WorkPage />} />
+        {/*<Route path="/contact" element={<ContactPage />} />
         <Route path="/chat" element={<ChatPage />} /> */}
       </Routes>
       {/* <Footer /> */}

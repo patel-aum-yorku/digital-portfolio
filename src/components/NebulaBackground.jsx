@@ -7,10 +7,10 @@ const fullConfig = {
   starsRotationSpeed: 3,
   nebulasIntensity: 7,
   cometFrequence: 100,
-  sunScale: 5,
+  sunScale: 4,
   planetsScale: 2.9,
-  solarSystemOrbite: 90,
-  solarSystemSpeedOrbit: 100,
+  solarSystemOrbite: 85,
+  solarSystemSpeedOrbit: 70,
   
 };
 export default function NebulaBackground() {
