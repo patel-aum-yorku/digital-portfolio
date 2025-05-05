@@ -32,9 +32,10 @@ export default function ProjectsPage() {
   return (
     <div className="relative w-full min-h-screen">
       <NebulaBackground />
+      
       {/* Header & Controls */}
       <section className="pt-32 py-16 px-4 text-center" id ="projects">
-      <SectionHeading className="text-glow mb-12" id="projects">
+      <SectionHeading className="text-glow mb-12" >
         My Projects !
       </SectionHeading>
         <h2 className="

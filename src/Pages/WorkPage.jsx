@@ -11,7 +11,7 @@ export default function WorkPage() {
         <NebulaBackground />
        
       <section id="work" className="pt-32 py-16 px-4">
-        <SectionHeading className="text-glow mb-12" id="work">
+        <SectionHeading className="text-glow mb-12" >
           My Work And Leadership Experience
         </SectionHeading>
         <WorkTimeline />

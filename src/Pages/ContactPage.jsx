@@ -9,7 +9,7 @@ export default function ContactPage() {
     <div className="relative w-full min-h-screen">
         <NebulaBackground />
         <section className="pt-32 py-16 px-4 text-center" id ="contact">
-        <SectionHeading className="text-glow mb-12" id="contact">
+        <SectionHeading className="text-glow mb-12" >
         🚀 Ready to Launch Your Message?
         </SectionHeading>
         <p className="text-xl font-medium

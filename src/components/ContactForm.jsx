@@ -42,28 +42,28 @@ export default function ContactForm() {
           name="from_name"
           placeholder="Name"
           required
-          className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md placeholder-gray-400 text-white focus:outline-none"
+          className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md placeholder-gray-400 text-white outline-yellow-500 focus:outline-2"
         />
         <input
           type="email"
           name="reply_to"
           placeholder="Email"
           required
-          className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md placeholder-gray-400 text-white focus:outline-none"
+          className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md placeholder-gray-400 text-white outline-yellow-500 focus:outline-2"
         />
         <input
           type="text"
           name="subject"
           placeholder="Subject"
           required
-          className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md placeholder-gray-400 text-white focus:outline-none"
+          className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md placeholder-gray-400 text-white outline-yellow-500 focus:outline-2"
         />
         <textarea
           name="message"
           placeholder="Message"
           required
           rows={4}
-          className="px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md placeholder-gray-400 text-white focus:outline-none resize-none"
+          className="px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md placeholder-gray-400 text-white outline-yellow-500 focus:outline-2 resize-none"
         />
         <SendButton />
       </form>

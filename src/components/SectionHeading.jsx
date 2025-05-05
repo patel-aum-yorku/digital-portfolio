@@ -11,6 +11,7 @@ import { motion } from 'framer-motion';
  *  - className (optional): extra Tailwind classes (e.g. "text-glow")
  */
 export default function SectionHeading({ children, id, className = '' }) {
+  if (!children) return null;
   return (
     <motion.h2
       id={id}
