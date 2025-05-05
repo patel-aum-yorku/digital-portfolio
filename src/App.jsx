@@ -1,59 +1,34 @@
 // Importing necessary libraries and components
 import React, { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import HomeSection from "./sections/HomeSection.jsx";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LandingPage from "./Pages/LandingPage.jsx";
+import ProjectsPage from "./Pages/ProjectsPage.jsx";
 import NebulaBackground from "./components/NebulaBackground";
-import AboutSection from "./sections/AboutSection.jsx";
+
+import Navbar from "./components/Navbar.jsx"; 
 //
 
-// Nebula configurations
-const fullConfig = {
-  starsCount: 1000,
-  starsRotationSpeed: 3,
-  nebulasIntensity: 7,
-  cometFrequence: 100,
-  sunScale: 3,
-  planetsScale: 2.9,
-  solarSystemOrbite: 90,
-  solarSystemSpeedOrbit: 100,
-  
-};
 
-const minimalConfig = {
-  ...fullConfig,
-  sunScale: 0,        // hides the sun
-  planetsScale: 0,    // hides all planets
-};
+
+
 
 function App() {
-  // Observe Home section visibility
-  const { ref: homeRef, inView: isHomeVisible } = useInView({
-    threshold: 0.1,
-    triggerOnce: false,
-  });
-
-    // State for current nebula config
-  const [nebulaConfig, setNebulaConfig] = useState(fullConfig);
-
-  // Update config when Home appears/disappears
-  useEffect(() => {
-    setNebulaConfig(isHomeVisible ? fullConfig : minimalConfig);
-  }, [isHomeVisible]);
  
-
   return (
-    <div className="relative">
+    <div>
        
-      {/* Persistent Nebula */}
-
-      <NebulaBackground config={nebulaConfig} />
-      <div ref={homeRef}>
-        <HomeSection />
-      </div>
-      {/* Content Sections */}
-     
-      <AboutSection />
-      {/* ...other sections */}
+      
+      <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        {/*<Route path="/work" element={<WorkPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/chat" element={<ChatPage />} /> */}
+      </Routes>
+      {/* <Footer /> */}
+    </BrowserRouter>
     </div>
   );
 
