@@ -10,7 +10,7 @@ export const projects = [
       ],
       skills: ['React.js','Node.js','Express.js','GitHub','MariaDB','SQL','Docker','Redux','Azure'],
       category: 'Software Development',
-      image: '/src/assets/ProjectImg/e-com.png'
+      image: './src/assets/ProjectImg/e-com.png'
     },
     {
       title: 'Sandwich Ordering App',
@@ -22,7 +22,7 @@ export const projects = [
       ],
       skills: ['Java','JUnit','OOP','MySQL','SOLID','Agile', 'Gradle', 'GitHub'],
       category: 'Software Development',
-      image: '/src/assets/ProjectImg/sandwich-ordering-app.png'
+      image: './src/assets/ProjectImg/sandwich-ordering-app.png'
     },
     {
       title: 'Smart‑Brain Website',
@@ -34,7 +34,7 @@ export const projects = [
       ],
       skills: ['HTML','CSS','React.js','Node.js','Express.js','PostgreSQL','REST API', 'GitHub'],
       category: 'Software Development',
-      image: '/src/assets/ProjectImg/smart-brain.png'
+      image: './src/assets/ProjectImg/smart-brain.png'
     },
     {
       title: 'Heart Disease Detector',
@@ -45,7 +45,7 @@ export const projects = [
       ],
       skills: ['Python','Scikit-Learn','Pandas','NumPy','Seaborn','Matplotlib', 'GitHub'],
       category: 'AI / Data Science',
-      image: '/src/assets/ProjectImg/heart-disease-detector.png'
+      image: './src/assets/ProjectImg/heart-disease-detector.png'
     },
     {
       title: 'Loan Guard',
@@ -56,7 +56,7 @@ export const projects = [
       ],
       skills: ['Python','Pandas','NumPy','Scikit-Learn','Seaborn','Matplotlib', 'GitHub'],
       category: 'AI / Data Science',
-      image: '/src/assets/ProjectImg/loan-gaurd.png'
+      image: './src/assets/ProjectImg/loan-gaurd.png'
     },
     {
       title: 'Digit Recognition Model',
@@ -67,7 +67,7 @@ export const projects = [
       ],
       skills: ['Python','NumPy','Pandas'],
       category: 'AI / Data Science',
-      image: '/src/assets/ProjectImg/digit-recognition-model.png'
+      image: './src/assets/ProjectImg/digit-recognition-model.png'
     },
     {
       title: 'Dog Vision AI',
@@ -78,7 +78,7 @@ export const projects = [
       ],
       skills: ['Python','TensorFlow','NumPy','Pandas','Matplotlib', 'GitHub', 'TensorFlow Hub'],
       category: 'AI / Data Science',
-      image: '/src/assets/ProjectImg/dog-vision-AI.png'
+      image: './src/assets/ProjectImg/dog-vision-AI.png'
     },
     {
       title: 'Flight Status Prediction',
@@ -89,7 +89,7 @@ export const projects = [
       ],
       skills: ['Python','Pandas','NumPy','Seaborn','Matplotlib','Scikit-Learn','GitHub'],
       category: 'AI / Data Science',
-      image: '/src/assets/ProjectImg/flight-status-prediction.png'
+      image: './src/assets/ProjectImg/flight-status-prediction.png'
     },
     {
       title: 'Sales Insights Dashboard',
@@ -99,7 +99,7 @@ export const projects = [
       ],
       skills: ['MySQL','SQL','ETL','Power BI'],
       category: 'AI / Data Science',
-      image: '/src/assets/ProjectImg/sales-insight.png'
+      image: './src/assets/ProjectImg/sales-insight.png'
     },
     {
       title: 'CuratEd (Koru Hackathon)',
@@ -110,6 +110,6 @@ export const projects = [
       ],
       skills: ['React.js','Cohere AI','Google Search API','GitHub','Prompt Engineering'],
       category: 'AI / Data Science',
-      image: '/src/assets/ProjectImg/curated.png'
+      image: './src/assets/ProjectImg/curated.png'
     },
   ];
