@@ -10,7 +10,7 @@ export default function WorkPage() {
       {/* NebulaBackground should be applied at App or Layout level */}
         <NebulaBackground />
        
-      <section id="work" className="pt-32 py-16 px-4">
+      <section id="work" className="pt-32 py-16 px-4 text-center">
         <SectionHeading className="text-glow mb-12" id="work">
           My Work And Leadership Experience
         </SectionHeading>
