@@ -49,7 +49,7 @@ export default function CourseCard({ code, name, desc }) {
               bg-white/5 text-gray-200 
               rounded-b-lg 
               overflow-y-auto 
-              max-h-32
+              max-h-50
             "
           >
             {desc}

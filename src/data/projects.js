@@ -8,7 +8,7 @@ export const projects = [
         'Built REST APIs to enable seamless front‑to‑back communication.',
         'Used Sequelize ORM to manage MariaDB operations and optimize queries.'
       ],
-      skills: ['JavaScript','React.js','Node.js','Express.js','GitHub','MariaDB','SQL','Docker','Redux','Azure','Scrum'],
+      skills: ['React.js','Node.js','Express.js','GitHub','MariaDB','SQL','Docker','Redux','Azure'],
       category: 'Software Development',
       image: '/src/assets/ProjectImg/e-com.png'
     },
@@ -20,7 +20,7 @@ export const projects = [
         'Used MySQL for inventory data storage and JUnit for testing.',
         'Automated builds and CI with Gradle.'
       ],
-      skills: ['Java','JUnit','OOP','MySQL','SOLID','Agile'],
+      skills: ['Java','JUnit','OOP','MySQL','SOLID','Agile', 'Gradle', 'GitHub'],
       category: 'Software Development',
       image: '/src/assets/ProjectImg/sandwich-ordering-app.png'
     },
@@ -32,7 +32,7 @@ export const projects = [
         'Front end in React.js; back end in Node.js/Express.js.',
         'PostgreSQL for user login data.'
       ],
-      skills: ['HTML','CSS','React.js','Node.js','Express.js','PostgreSQL','REST API'],
+      skills: ['HTML','CSS','React.js','Node.js','Express.js','PostgreSQL','REST API', 'GitHub'],
       category: 'Software Development',
       image: '/src/assets/ProjectImg/smart-brain.png'
     },
@@ -43,7 +43,7 @@ export const projects = [
         'Built a heart disease prediction model with Scikit-Learn achieving 86% accuracy.',
         'Cleaned data with Pandas/NumPy and visualized insights in Seaborn/Matplotlib.'
       ],
-      skills: ['Python','Scikit-Learn','Pandas','NumPy','Seaborn','Matplotlib'],
+      skills: ['Python','Scikit-Learn','Pandas','NumPy','Seaborn','Matplotlib', 'GitHub'],
       category: 'AI / Data Science',
       image: '/src/assets/ProjectImg/heart-disease-detector.png'
     },
@@ -54,7 +54,7 @@ export const projects = [
         'Team‑built loan eligibility predictor; feature engineering improved performance.',
         'Evaluated models with confusion matrices; best model reached 81.4% accuracy.'
       ],
-      skills: ['Python','Pandas','NumPy','Scikit-Learn','Seaborn','Matplotlib'],
+      skills: ['Python','Pandas','NumPy','Scikit-Learn','Seaborn','Matplotlib', 'GitHub'],
       category: 'AI / Data Science',
       image: '/src/assets/ProjectImg/loan-gaurd.png'
     },
@@ -76,7 +76,7 @@ export const projects = [
         'End‑to‑end deep learning pipeline for dog breed classification using TensorFlow Hub.',
         'Processed 20k+ images, applied transfer learning, and visualized metrics.'
       ],
-      skills: ['Python','TensorFlow','NumPy','Pandas','Matplotlib'],
+      skills: ['Python','TensorFlow','NumPy','Pandas','Matplotlib', 'GitHub', 'TensorFlow Hub'],
       category: 'AI / Data Science',
       image: '/src/assets/ProjectImg/dog-vision-AI.png'
     },
@@ -102,7 +102,7 @@ export const projects = [
       image: '/src/assets/ProjectImg/sales-insight.png'
     },
     {
-      title: 'CuratEd (Hackathon)',
+      title: 'CuratEd (Koru Hackathon)',
       link: 'https://github.com/patel-aum-yorku/Koru-PA-3',
       description: [
         'AI‑powered learning platform with Google Search & Cohere prompt engineering.',

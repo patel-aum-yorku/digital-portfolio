@@ -32,6 +32,7 @@ const StyledWrapper = styled.div`
     cursor: pointer;
     position: relative;
     perspective: 500px;
+    
   }
 
   .icon {
@@ -50,8 +51,9 @@ const StyledWrapper = styled.div`
   .cube {
     transition: transform 0.4s;
     transform-style: preserve-3d;
-    width: 140px;
-    height: 32px;
+    
+    width: 144px;
+    height: 36px;
     position: relative;
   }
 
