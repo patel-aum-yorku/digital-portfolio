@@ -16,7 +16,7 @@ export default function ContactPage() {
     bg-clip-text text-transparent
     bg-gradient-to-r from-gray-200 via-gray-100 to-white
     drop-shadow-[0_0_4px_rgba(255,255,255,0.6)] mb-12 italic">
-          (Drop me a line, unless it's a pickup line—then keep it classy!)
+          My virtual door is always open. (Knock gently via the form below.)
         </p>
         <ContactForm />
       </section>
