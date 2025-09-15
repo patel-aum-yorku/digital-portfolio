@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiOutlineHome } from 'react-icons/ai';
-import { FaProjectDiagram, FaBriefcase } from 'react-icons/fa';
+import { FaProjectDiagram, FaBriefcase, FaRobot } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
 const menuItems = [
@@ -9,6 +9,7 @@ const menuItems = [
   { to: '/projects', Icon: FaProjectDiagram, label: 'Projects' },
   { to: '/work',     Icon: FaBriefcase,      label: 'Work' },
   { to: '/contact',  Icon: FiMail,           label: 'Contact' },
+  { to: '/chat',     Icon: FaRobot,          label: 'Chat' },
 ];
 
 export default function Navbar() {
