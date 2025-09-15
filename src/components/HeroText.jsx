@@ -73,7 +73,7 @@ export default function HeroText({ nameRef }) {
 
      {/* ScrambleText  */}
      <ScrambleText
-        text='Coding tomorrow’s intelligence, today !'
+        text="On a mission to engineer tomorrow's intelligence, today."
         speed={60}
         step={1}
         className="
