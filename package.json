@@ -9,15 +9,13 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build:faiss": "node scripts/build-faiss.js"
+    "build:context": "node scripts/build-context.js"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@flodlc/nebula": "^1.0.56",
     "@headlessui/react": "^2.2.2",
-    "@huggingface/inference": "^4.13.15",
     "@huggingface/transformers": "^3.8.1",
-    "@langchain/community": "^1.1.27",
     "@langchain/core": "^1.1.38",
     "@langchain/groq": "^1.1.5",
     "@react-three/drei": "^10.0.6",
@@ -32,7 +30,6 @@
     "dotenv": "^17.4.0",
     "emailjs-com": "^3.2.0",
     "express": "^5.2.1",
-    "faiss-node": "^0.5.1",
     "framer-motion": "^12.7.3",
     "langchain": "^1.2.39",
     "pdf-parse": "^1.1.4",
