@@ -1,74 +1,98 @@
 // src/data/techIcons.js
 import {
     SiHtml5,
-    SiCss3,
+    SiCss,
     SiTailwindcss,
     SiReact,
     SiNodedotjs,
     SiExpress,
     SiSpringboot,
-   
+    SiFastapi,
     SiMongodb,
     SiMysql,
     SiPostgresql,
+    SiMariadb,
     SiScikitlearn,
     SiTensorflow,
     SiPandas,
     SiNumpy,
-    SiGraphite ,
-    
+    SiGraphite,
+    SiMlflow,
+    SiLangchain,
     SiGit,
     SiGithub,
-
-    
     SiDocker,
-
-
-    
-    SiApachehadoop ,
+    SiApachehadoop,
     SiApachespark,
     SiPostman,
     SiJira,
-    SiSlack
+    SiSlack,
+    SiPython,
+    SiJavascript,
+    SiTypescript,
   } from 'react-icons/si';
-  import { FaJava } from "react-icons/fa";
-  import { FaAws } from "react-icons/fa";
+  import { FaJava, FaAws, FaRobot, FaBrain } from "react-icons/fa";
   import { VscAzure } from "react-icons/vsc";
   import { BsBarChartFill } from "react-icons/bs";
-  import { BiLogoMicrosoftTeams } from "react-icons/bi";
-  import { FaKiwiBird } from "react-icons/fa";
+  import { TbLetterC } from "react-icons/tb";
+  import { PiDatabaseBold } from "react-icons/pi";
+
   export const techIconMap = {
+    // Languages
+    Python: SiPython,
+    Java: FaJava,
+    JavaScript: SiJavascript,
+    TypeScript: SiTypescript,
+    C: TbLetterC,
+    SQL: PiDatabaseBold,
+
+    // Front End
     HTML: SiHtml5,
-    CSS: SiCss3,
+    CSS: SiCss,
     Tailwind: SiTailwindcss,
     'React.JS': SiReact,
+
+    // Back End
     'Node.JS': SiNodedotjs,
     'Express.JS': SiExpress,
+    FastAPI: SiFastapi,
     'Spring Boot': SiSpringboot,
-    Servlets: FaJava,
-    JSP: FaJava,
+
+    // Data
     MongoDB: SiMongodb,
     MySQL: SiMysql,
     Postgres: SiPostgresql,
-    'Scikit-Learn': SiScikitlearn,
+    MariaDB: SiMariadb,
+
+    // AI
+    LangChain: SiLangchain,
+    RAG: FaRobot,
+    LLMs: FaBrain,
+    'AWS Bedrock': FaAws,
+    'AWS Sagemaker': FaAws,
+
+    // ML
     TensorFlow: SiTensorflow,
+    'Scikit-Learn': SiScikitlearn,
     Pandas: SiPandas,
     NumPy: SiNumpy,
-    Matplotlib: SiGraphite ,
-    Seaborn: SiGraphite ,
-    PySpark: SiApachespark,
-    Git: SiGit,
-    GitHub: SiGithub,
+    MLflow: SiMlflow,
+    Matplotlib: SiGraphite,
+    Seaborn: SiGraphite,
+
+    // Cloud & DevOps
     AWS: FaAws,
     Azure: VscAzure,
     Docker: SiDocker,
-    'MS Office': BiLogoMicrosoftTeams,
+    Git: SiGit,
+    GitHub: SiGithub,
+
+    // Tools
     'Power BI': BsBarChartFill,
-    Weka: FaKiwiBird,
-    Hadoop: SiApachehadoop ,
-    Spark: SiApachespark,
     Postman: SiPostman,
     Jira: SiJira,
     Slack: SiSlack,
+    PySpark: SiApachespark,
+    Hadoop: SiApachehadoop,
+    Spark: SiApachespark,
   };
-  

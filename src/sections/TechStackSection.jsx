@@ -7,12 +7,14 @@ export default function TechStackSection() {
   const scrollStep = 288 + 24; // 18rem (288px) + 1.5rem gap (24px) = 312px
 
   const categories = [
+    { emoji: '💻', title: 'Languages',   items: ['Python','Java','JavaScript','TypeScript','C','SQL'] },
     { emoji: '🌐', title: 'Front End',   items: ['HTML','CSS','Tailwind','React.JS'] },
-    { emoji: '🛠️', title: 'Back End',    items: ['Node.JS','Express.JS','Spring Boot','JSP','Servlets'] },
-    { emoji: '💾', title: 'Data',        items: ['MongoDB','MySQL','Postgres'] },
-    { emoji: '🤖', title: 'AI/ML',       items: ['NumPy','Scikit-Learn','TensorFlow','Pandas','Matplotlib','Seaborn','PySpark'] },
-    { emoji: '☁️', title: 'DevOps',      items: ['Git','GitHub','AWS','Azure','Docker'] },
-    { emoji: '🧰', title: 'Tools',       items: ['MS Office','Power BI','Weka','Hadoop','Spark','Postman','Jira','Slack'] },
+    { emoji: '🛠️', title: 'Back End',    items: ['Node.JS','Express.JS','FastAPI','Spring Boot'] },
+    { emoji: '💾', title: 'Data',        items: ['MongoDB','MySQL','Postgres','MariaDB'] },
+    { emoji: '🤖', title: 'AI',          items: ['LangChain','RAG','LLMs','AWS Bedrock','AWS Sagemaker'] },
+    { emoji: '🧠', title: 'ML',          items: ['TensorFlow','Scikit-Learn','Pandas','NumPy','MLflow','Matplotlib','Seaborn'] },
+    { emoji: '☁️', title: 'Cloud & DevOps', items: ['AWS','Azure','Docker','Git','GitHub'] },
+    { emoji: '🧰', title: 'Tools',       items: ['Power BI','Postman','Jira','Slack','PySpark','Hadoop','Spark'] },
   ];
 
   const prev = () => {
@@ -45,7 +47,7 @@ export default function TechStackSection() {
           className="
             flex justify-start space-x-6
             overflow-x-auto scroll-smooth snap-x snap-mandatory
-            px-4 pb-4 no-scrollbar
+            px-4 pt-4 pb-4 no-scrollbar
           "
         >
           {categories.map((cat) => (

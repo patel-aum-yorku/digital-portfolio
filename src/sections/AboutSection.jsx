@@ -2,7 +2,6 @@ import React from 'react'
 import AboutMe from '../components/AboutMe';
 import imageSrc2 from '../assets/myimg2.jpg';
 import SectionHeading from '../components/SectionHeading.jsx';
-import CoursesCarousel from '../components/CoursesCarousel.jsx';
 import TechStackSection from './TechStackSection.jsx';
 
 const AboutSection = () => {
@@ -33,15 +32,10 @@ const AboutSection = () => {
         education={education}
       />
 
-      {/* TODO: subsections (Courses, Tech Stack, Certificates) go here */}
-      <SectionHeading className="mt-16 mb-8 text-glow" id="courses">
-  Courses I Took!
-</SectionHeading>
-<CoursesCarousel />
-<SectionHeading className="mt-16 mb-8 text-glow" id="tech-stack">
+      <SectionHeading className="mt-16 mb-8 text-glow" id="tech-stack">
         My Tech Stack
-  </SectionHeading>
-<TechStackSection />
+      </SectionHeading>
+      <TechStackSection />
     </section>
   );
 }

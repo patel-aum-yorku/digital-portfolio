@@ -1,9 +1,9 @@
 // src/components/WorkTimeline.jsx
 import React from 'react';
 import { Slide } from 'react-awesome-reveal';
-import { experiences } from '../data/experiences';
 
-export default function WorkTimeline() {
+
+export default function WorkTimeline({ experiences }) {
     return (
       <div className="relative max-w-4xl mx-auto">
         {/* Central vertical line with glow */}
@@ -34,7 +34,7 @@ export default function WorkTimeline() {
                   <div className="text-sm font-mono text-amber-300 mb-1">
                     {exp.date}
                   </div>
-                  <h3 className="text-xl font- text-white mb-2 text-glow">
+                  <h3 className="text-xl font-bold text-white mb-2 text-glow">
                     {exp.title}
                   </h3>
                   <ul className="list-disc list-inside text-gray-300 space-y-1">

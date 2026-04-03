@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiOutlineHome } from 'react-icons/ai';
-import { FaProjectDiagram, FaBriefcase } from 'react-icons/fa';
+import { FaProjectDiagram, FaBriefcase, FaRobot } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
 const menuItems = [
@@ -9,11 +9,12 @@ const menuItems = [
   { to: '/projects', Icon: FaProjectDiagram, label: 'Projects' },
   { to: '/work',     Icon: FaBriefcase,      label: 'Work' },
   { to: '/contact',  Icon: FiMail,           label: 'Contact' },
+  { to: '/chat',     Icon: FaRobot,          label: 'Chatbot' }
 ];
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-4 left-0 w-full z-50 pointer-events-none">
+    <nav className="absolute top-8 left-0 w-full z-50 pointer-events-none">
       <ul className="mx-auto flex justify-center space-x-6 max-w-screen-lg">
         {menuItems.map(({ to, Icon, label }) => (
           <li key={to} className="pointer-events-auto">
@@ -23,11 +24,11 @@ export default function Navbar() {
               className={({ isActive }) =>
                 `group relative flex items-center justify-center
                  w-20 h-18 clip-hexagon
-                 bg-white/10 backdrop-blur-lg
-                 transition-transform duration-300
+                 backdrop-blur-lg
+                 transition-all duration-300
                  ${isActive
-                   ? 'scale-110 border-2 border-amber-400 shadow-[0_0_20px_rgba(255,193,7,0.8)]'
-                   : 'hover:scale-110 hover:border-2 hover:border-amber-400 hover:shadow-[0_0_15px_rgba(255,193,7,0.6)]'}`
+                   ? 'bg-amber-500/30 scale-110 shadow-[0_0_20px_rgba(255,193,7,0.8)]'
+                   : 'bg-white/10 hover:bg-amber-400/20 hover:scale-110 hover:shadow-[0_0_15px_rgba(255,193,7,0.6)]'}`
               }
             >
               <Icon className="w-6 h-6 text-white" />

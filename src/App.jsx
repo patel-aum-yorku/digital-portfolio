@@ -7,11 +7,7 @@ import NebulaBackground from "./components/NebulaBackground";
 import WorkPage from './Pages/WorkPage.jsx';
 import Navbar from "./components/Navbar.jsx"; 
 import ContactPage from "./Pages/ContactPage.jsx";
-//
-
-
-
-
+import ChatbotPage from "./Pages/ChatbotPage.jsx";
 
 function App() {
  
@@ -26,7 +22,7 @@ function App() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/work" element={<WorkPage />} />
        <Route path="/contact" element={<ContactPage />} />
-         {/*<Route path="/chat" element={<ChatPage />} /> */}
+       <Route path="/chat" element={<ChatbotPage />} />
       </Routes>
       {/* <Footer /> */}
     </BrowserRouter>

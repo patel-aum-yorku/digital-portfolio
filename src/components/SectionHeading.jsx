@@ -28,7 +28,7 @@ export default function SectionHeading({ children, id, className = '' }) {
 
       {/* animated gradient underline */}
       <motion.span
-        className="absolute left-1/2 top--4  -translate-x-1/2 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"
+        className="absolute left-1/2 -bottom-4 -translate-x-1/2 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"
         initial={{ width: 0 }}
         whileInView={{ width: '5rem' }}
         viewport={{ once: true }}

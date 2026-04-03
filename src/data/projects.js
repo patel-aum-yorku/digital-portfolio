@@ -2,14 +2,14 @@
 
 export const projects = [
     {
-      title: 'E-Commerce Website',
+      title: 'AI Powered E-Commerce Website',
       link: 'https://github.com/TimothyLai77/EECS4413',
       description: [
-        'Developed a full‑stack e‑commerce platform using React.js, Node.js, Express.js, and MariaDB.',
-        'Built REST APIs to enable seamless front‑to‑back communication.',
-        'Used Sequelize ORM to manage MariaDB operations and optimize queries.'
+        'Developed a full‑stack platform using ReactJS, NodeJS, ExpressJS, and MariaDB.',
+        'Built a RAG‑based natural language to SQL service using Python, LangChain, Gemini, and ChromaDB.',
+        'Implemented a scalable FastAPI microservice and optimized prompts to improve response accuracy.'
       ],
-      skills: ['React.js','Node.js','Express.js','GitHub','MariaDB','SQL','Docker','Redux','Azure'],
+      skills: ['React.js','Node.js','Express.js','MariaDB','Python','LangChain','Gemini','ChromaDB','FastAPI','Docker','GitHub'],
       category: 'Software Development',
       image: '/assets/ProjectImg/e-com.png'
     },
