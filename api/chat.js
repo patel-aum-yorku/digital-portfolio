@@ -96,8 +96,8 @@ export default async function handler(req, res) {
     // Setup Groq LLM
     const llm = new ChatGroq({
       apiKey: process.env.VITE_GROQ_API_KEY || process.env.GROQ_API_KEY, 
-      model: "llama-3.1-8b-instant",
-      temperature: 0.1, // Low temperature for factual RAG & classification
+      model: "openai/gpt-oss-120b",
+      temperature: 0.3, // Low temperature for factual RAG & classification
     });
 
     // ── LLM Guardrail Check ──
